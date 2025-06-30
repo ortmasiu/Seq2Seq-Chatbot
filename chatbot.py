@@ -400,7 +400,7 @@ for epoch in range(1, epochs + 1):
         ending_time = time.time()
         batch_time = ending_time - starting_time
         average_validation_loss_error = total_validation_loss_error / (len(validation_questions) / batch_size)
-        print("Validation Loss Error: {:>6.3f}, Batch Validation Time: {:d} seconds".format(average_validation_loss_error, int(batch_time))
+        print("Validation Loss Error: {:>6.3f}, Batch Validation Time: {:d} seconds".format(average_validation_loss_error, int(batch_time)))
         learning_rate *=  learning_rate_decay
         if learning_rate < min_learning_rate:
             learning_rate = min_learning_rate
@@ -415,7 +415,7 @@ for epoch in range(1, epochs + 1):
             early_stopping_check += 1
             if early_stopping_check == early_stopping_stop:
                     break
-    if early_stopping)check == early_stopping_stop:
+    if early_stopping_check == early_stopping_stop:
             print("I am really sorry, but I'm unable to speak any better right now. I'm really trying but this is the best that I can do.")
             break
 print("Game Over")
